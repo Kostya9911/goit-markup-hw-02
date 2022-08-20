@@ -1,9 +1,11 @@
+/* Переменные */
 :root {
   /* text-color */
 
   --main-cl-txt: #212121;
   --second-cl-txt: #757575;
   --link-cl-txt: #2196f3;
+  --ligt-cl-txt: #ffffff;
 
   /* background-color */
   --main-bcg-cl: #2f303a;
@@ -15,6 +17,8 @@ body {
   font-family: Roboto, Tahoma, sans-serif;
   color: var(--main-cl-txt);
 }
+
+/* Стилизация логотипа */
 
 .link-logo {
   font-family: 'Raleway';
@@ -32,20 +36,187 @@ body {
 .logo-part-2 {
   color: #000000;
 }
+.logo-part-3 {
+  color: var(--ligt-cl-txt);
+}
+
+/* Убирает во всех списках дефисы */
 
 .list {
   list-style-type: none;
 }
+
 .list-contact {
   color: var(--second-cl-txt);
 }
 .link {
   text-decoration: none;
-  font-family: 'Roboto';
-  font-style: normal;
+
   font-weight: 500;
   font-size: 14px;
   color: inherit;
   line-height: 16px;
   letter-spacing: 0.02em;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--link-cl-txt);
+}
+
+.head-section {
+  background-color: var(--main-bcg-cl);
+}
+.main-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  /* or 136% */
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--ligt-cl-txt);
+}
+/* Кнопка главной секции */
+.button-main {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--ligt-cl-txt);
+  background-color: var(--link-cl-txt);
+  cursor: pointer;
+}
+
+/* Скрытый заголовок */
+.hidden-title {
+  display: none;
+}
+/* Список преимуществ */
+
+.title-advantage {
+  text-transform: uppercase;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.advantage {
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+
+  color: var(--second-cl-txt);
+}
+
+/* Чем мы занимаемся */
+.title-second {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* Наша команда */
+
+.title-team {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.profession {
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--second-cl-txt);
+}
+
+/* Подвал */
+.footer {
+  background-color: var(--main-bcg-cl);
+}
+.link-map {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+
+  color: var(--ligt-cl-txt);
+  text-decoration: none;
+}
+.link-adr-footer {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+/* Кнопки портфолио */
+
+.button-portfolio {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  /* identical to box height, or 162% */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+  background-color: var(--srcond-bcg-cl);
+  cursor: pointer;
+}
+.button-portfolio:hover,
+.button-portfolio:focus {
+  background-color: var(--link-cl-txt);
+  color: var(--ligt-cl-txt);
+}
+.title-project {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  /* identical to box height, or 200% */
+
+  letter-spacing: 0.06em;
+}
+.type-project {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  /* identical to box height, or 188% */
+
+  letter-spacing: 0.03em;
+
+  color: var(--second-cl-txt);
+}
+
+.link-alt-cl:hover {
+  color: var(--link-cl-txt);
+}
+.link-adr-footer:hover,
+.link-adr-footer:focus {
+  color: var(--link-cl-txt);
+}
+.link-map:hover,
+.link-map:focus {
+  color: var(--link-cl-txt);
 }
