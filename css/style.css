@@ -1,24 +1,28 @@
 /* Переменные */
 :root {
-  /* text-color */
+  /* Колір тексту */
 
   --main-cl-txt: #212121;
   --second-cl-txt: #757575;
   --link-cl-txt: #2196f3;
   --ligt-cl-txt: #ffffff;
 
-  /* background-color */
+  /* Колір фону */
   --main-bcg-cl: #2f303a;
   --srcond-bcg-cl: #f5f4fa;
 
-  /* others */
+  /* Глобальні стилі */
 }
 body {
   font-family: Roboto, Tahoma, sans-serif;
   color: var(--main-cl-txt);
 }
 
-/* Стилизация логотипа */
+/* Стилізація головної сторінки, хедера та футера */
+
+/* Хедер */
+
+/* Стилизация логотипа - хедер та футер */
 
 .link-logo {
   font-family: 'Raleway';
@@ -30,21 +34,26 @@ body {
   text-decoration: none;
 }
 
+/* Логотип - перша частина хедер та футер */
 .logo-part-1 {
   color: var(--link-cl-txt);
 }
+/* Логотип - друга частина хедер */
 .logo-part-2 {
   color: #000000;
 }
+/* Логотип - друга частина футер  */
 .logo-part-3 {
   color: var(--ligt-cl-txt);
 }
 
-/* Убирает во всех списках дефисы */
+/* Прибирає у списках по всьому сайту декор */
 
 .list {
   list-style-type: none;
 }
+
+/* Стилізує контакти хедер */
 
 .list-contact {
   color: var(--second-cl-txt);
@@ -64,6 +73,10 @@ body {
   color: var(--link-cl-txt);
 }
 
+/* Стилізація головної частини сторінки. Мейн */
+
+/* Головна секція */
+
 .head-section {
   background-color: var(--main-bcg-cl);
 }
@@ -79,7 +92,7 @@ body {
 
   color: var(--ligt-cl-txt);
 }
-/* Кнопка главной секции */
+/* Кнопка головної секції */
 .button-main {
   font-weight: 700;
   font-size: 16px;
@@ -89,11 +102,13 @@ body {
   cursor: pointer;
 }
 
-/* Скрытый заголовок */
+/* Секція - Перелік переваг Студії */
+
+/* Прихований заголовок */
+
 .hidden-title {
   display: none;
 }
-/* Список преимуществ */
 
 .title-advantage {
   text-transform: uppercase;
@@ -114,7 +129,7 @@ body {
   color: var(--second-cl-txt);
 }
 
-/* Чем мы занимаемся */
+/* Секція - Перелік послуг */
 .title-second {
   font-weight: 700;
   font-size: 36px;
@@ -123,7 +138,13 @@ body {
   letter-spacing: 0.03em;
 }
 
-/* Наша команда */
+/* Секція - Перелік членів команди */
+.section-our-team {
+  background-color: var(--srcond-bcg-cl);
+}
+.list-item-team {
+  background-color: var(--ligt-cl-txt);
+}
 
 .title-team {
   font-weight: 500;
@@ -145,7 +166,8 @@ body {
   color: var(--second-cl-txt);
 }
 
-/* Подвал */
+/* Підвал */
+
 .footer {
   background-color: var(--main-bcg-cl);
 }
@@ -171,6 +193,17 @@ body {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 }
+/* Стилізація ссилок у футері псевдокласами */
+.link-adr-footer:hover,
+.link-adr-footer:focus {
+  color: var(--link-cl-txt);
+}
+.link-map:hover,
+.link-map:focus {
+  color: var(--link-cl-txt);
+}
+
+/* Стилізація сторінки - Портфоліо */
 
 /* Кнопки портфолио */
 
@@ -190,6 +223,9 @@ body {
   background-color: var(--link-cl-txt);
   color: var(--ligt-cl-txt);
 }
+
+/* Перелік робіт в портфоліо */
+
 .title-project {
   font-weight: 700;
   font-size: 18px;
@@ -207,16 +243,4 @@ body {
   letter-spacing: 0.03em;
 
   color: var(--second-cl-txt);
-}
-
-.link-alt-cl:hover {
-  color: var(--link-cl-txt);
-}
-.link-adr-footer:hover,
-.link-adr-footer:focus {
-  color: var(--link-cl-txt);
-}
-.link-map:hover,
-.link-map:focus {
-  color: var(--link-cl-txt);
 }
