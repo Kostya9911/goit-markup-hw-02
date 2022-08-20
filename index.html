@@ -4,31 +4,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="css/style.css" />
     <title>Студія</title>
   </head>
   <body>
     <!-- Top line -->
-    <header>
-      <nav>
-        <!-- Web - Studio разделено для форматирования CSS, ссылка на главную стр. работает-->
-        <a href="index.html"><span>Web</span><span>Studio</span></a>
-        <ul>
-          <li><a href="index.html">Студія</a></li>
-          <li><a href="portfolio.html">Портфоліо</a></li>
-          <li><a href="">Контакти</a></li>
+    <header class="header">
+      <nav class="navigation">
+        <a class="link-logo" href="index.html"
+          ><span class="logo-part-1">Web</span><span class="logo-part-2">Studio</span></a
+        >
+        <ul class="list">
+          <li><a class="link" href="index.html">Студія</a></li>
+          <li><a class="link" href="portfolio.html">Портфоліо</a></li>
+          <li><a class="link" href="">Контакти</a></li>
         </ul>
       </nav>
-      <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+      <ul class="list list-contact">
+        <li><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        <li><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
       </ul>
     </header>
     <main>
@@ -41,7 +43,7 @@
       <section>
         <!-- Скрытый заголовок -->
         <h2>Наші переваги</h2>
-        <ul>
+        <ul class="list">
           <li>
             <h3>Увага до деталей</h3>
             <p>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>

@@ -1,3 +1,51 @@
+:root {
+  /* text-color */
+
+  --main-cl-txt: #212121;
+  --second-cl-txt: #757575;
+  --link-cl-txt: #2196f3;
+
+  /* background-color */
+  --main-bcg-cl: #2f303a;
+  --srcond-bcg-cl: #f5f4fa;
+
+  /* others */
+}
 body {
+  font-family: Roboto, Tahoma, sans-serif;
+  color: var(--main-cl-txt);
+}
+
+.link-logo {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.logo-part-1 {
+  color: var(--link-cl-txt);
+}
+.logo-part-2 {
+  color: #000000;
+}
+
+.list {
+  list-style-type: none;
+}
+.list-contact {
+  color: var(--second-cl-txt);
+}
+.link {
+  text-decoration: none;
   font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: inherit;
+  line-height: 16px;
+  letter-spacing: 0.02em;
 }
