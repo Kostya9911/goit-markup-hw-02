@@ -47,7 +47,7 @@ body {
   color: var(--ligt-cl-txt);
 }
 
-/* Прибирає у списках по всьому сайту декор */
+/* Прибирає у списках по всьому сайту "декор" */
 
 .list {
   list-style-type: none;
@@ -96,6 +96,7 @@ body {
 }
 /* Кнопка головної секції */
 .button-main {
+  font-family: inherit;
   font-weight: 700;
   line-height: 1.87;
   color: var(--ligt-cl-txt);
@@ -198,6 +199,7 @@ body {
 /* Кнопки портфолио */
 
 .button-portfolio {
+  font-family: inherit;
   font-weight: 500;
   line-height: 1.62;
 
