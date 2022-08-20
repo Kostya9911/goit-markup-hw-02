@@ -28,7 +28,7 @@ body {
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.2;
 
   letter-spacing: 0.03em;
   text-decoration: none;
@@ -64,12 +64,16 @@ body {
   font-weight: 500;
   font-size: 14px;
   color: inherit;
-  line-height: 16px;
+  line-height: 1.15;
   letter-spacing: 0.02em;
 }
 
 .link:hover,
 .link:focus {
+  color: var(--link-cl-txt);
+}
+
+.current {
   color: var(--link-cl-txt);
 }
 
@@ -83,9 +87,7 @@ body {
 .main-title {
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
-  /* or 136% */
-
+  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -95,11 +97,16 @@ body {
 /* Кнопка головної секції */
 .button-main {
   font-weight: 700;
-  font-size: 16px;
-  line-height: 30px;
+  line-height: 1.87;
   color: var(--ligt-cl-txt);
   background-color: var(--link-cl-txt);
   cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+.button-main:hover,
+.button-main:focus {
+  background-color: #188ce8;
 }
 
 /* Секція - Перелік переваг Студії */
@@ -112,28 +119,21 @@ body {
 
 .title-advantage {
   text-transform: uppercase;
-
-  font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
 }
 .advantage {
   font-size: 14px;
-  line-height: 24px;
-  /* or 171% */
-
+  line-height: 1.71;
   letter-spacing: 0.03em;
-
   color: var(--second-cl-txt);
 }
 
 /* Секція - Перелік послуг */
 .title-second {
-  font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -148,18 +148,12 @@ body {
 
 .title-team {
   font-weight: 500;
-  font-size: 16px;
   line-height: 19px;
-  /* identical to box height */
-
   text-align: center;
   letter-spacing: 0.03em;
 }
 .profession {
-  font-size: 16px;
-  line-height: 19px;
-  /* identical to box height */
-
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
 
@@ -174,9 +168,7 @@ body {
 .link-map {
   font-style: normal;
   font-size: 14px;
-  line-height: 24px;
-  /* or 171% */
-
+  line-height: 1.71;
   letter-spacing: 0.03em;
 
   color: var(--ligt-cl-txt);
@@ -185,9 +177,7 @@ body {
 .link-adr-footer {
   font-style: normal;
   font-size: 14px;
-  line-height: 24px;
-  /* or 171% */
-
+  line-height: 1.71;
   letter-spacing: 0.03em;
 
   color: rgba(255, 255, 255, 0.6);
@@ -209,14 +199,14 @@ body {
 
 .button-portfolio {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
-  /* identical to box height, or 162% */
+  line-height: 1.62;
 
   text-align: center;
   letter-spacing: 0.03em;
   background-color: var(--srcond-bcg-cl);
   cursor: pointer;
+  border: none;
+  border-radius: 4px;
 }
 .button-portfolio:hover,
 .button-portfolio:focus {
@@ -227,18 +217,13 @@ body {
 /* Перелік робіт в портфоліо */
 
 .title-project {
-  font-weight: 700;
   font-size: 18px;
-  line-height: 36px;
-  /* identical to box height, or 200% */
+  line-height: 2;
 
   letter-spacing: 0.06em;
 }
 .type-project {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 30px;
-  /* identical to box height, or 188% */
+  line-height: 1.87;
 
   letter-spacing: 0.03em;
 
