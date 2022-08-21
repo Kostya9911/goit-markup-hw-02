@@ -10,12 +10,14 @@
   /* Колір фону */
   --main-bcg-cl: #2f303a;
   --srcond-bcg-cl: #f5f4fa;
-
-  /* Глобальні стилі */
 }
+
+/* Глобальні стилі */
+
 body {
   font-family: Roboto, Tahoma, sans-serif;
   color: var(--main-cl-txt);
+  letter-spacing: 0.03em;
 }
 
 /* Стилізація головної сторінки, хедера та футера */
@@ -29,8 +31,6 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-
-  letter-spacing: 0.03em;
   text-decoration: none;
 }
 
@@ -59,13 +59,12 @@ body {
   color: var(--second-cl-txt);
 }
 .link {
-  text-decoration: none;
-
   font-weight: 500;
   font-size: 14px;
   color: inherit;
   line-height: 1.15;
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
 .link:hover,
@@ -112,7 +111,7 @@ body {
 
 /* Секція - Перелік переваг Студії */
 
-/* Прихований заголовок */
+/* Приховує заголовоки по всьому сайту */
 
 .hidden-title {
   display: none;
@@ -122,21 +121,18 @@ body {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
 }
 .advantage {
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--second-cl-txt);
 }
 
 /* Секція - Перелік послуг */
-.title-second {
+.title-team-services {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 
 /* Секція - Перелік членів команди */
@@ -151,13 +147,10 @@ body {
   font-weight: 500;
   line-height: 19px;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 .profession {
   line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
-
   color: var(--second-cl-txt);
 }
 
@@ -170,8 +163,6 @@ body {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
-
   color: var(--ligt-cl-txt);
   text-decoration: none;
 }
@@ -179,8 +170,6 @@ body {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
-
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 }
@@ -202,9 +191,7 @@ body {
   font-family: inherit;
   font-weight: 500;
   line-height: 1.62;
-
   text-align: center;
-  letter-spacing: 0.03em;
   background-color: var(--srcond-bcg-cl);
   cursor: pointer;
   border: none;
@@ -226,8 +213,6 @@ body {
 }
 .type-project {
   line-height: 1.87;
-
-  letter-spacing: 0.03em;
 
   color: var(--second-cl-txt);
 }
