@@ -6,10 +6,12 @@
   --second-cl-txt: #757575;
   --link-cl-txt: #2196f3;
   --ligt-cl-txt: #ffffff;
+  --tx-col-11: #000;
 
   /* Колір фону */
   --main-bcg-cl: #2f303a;
   --srcond-bcg-cl: #f5f4fa;
+  --col-bcg-11: #188ce8;
 }
 
 /* Глобальні стилі */
@@ -40,7 +42,7 @@ body {
 }
 /* Логотип - друга частина хедер */
 .logo-part-2 {
-  color: #000000;
+  color: var(--tx-col-11);
 }
 /* Логотип - друга частина футер  */
 .logo-part-3 {
@@ -96,8 +98,10 @@ body {
 /* Кнопка головної секції */
 .button-main {
   font-family: inherit;
+  font-size: 16px;
   font-weight: 700;
   line-height: 1.87;
+  letter-spacing: 0.06em;
   color: var(--ligt-cl-txt);
   background-color: var(--link-cl-txt);
   cursor: pointer;
@@ -106,15 +110,24 @@ body {
 }
 .button-main:hover,
 .button-main:focus {
-  background-color: #188ce8;
+  background-color: var(--col-bcg-11);
 }
 
 /* Секція - Перелік переваг Студії */
 
 /* Приховує заголовоки по всьому сайту */
 
-.hidden-title {
-  display: none;
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 .title-advantage {
@@ -191,7 +204,9 @@ body {
   font-family: inherit;
   font-weight: 500;
   line-height: 1.62;
+  letter-spacing: 0.03em;
   text-align: center;
+  color: var(--main-cl-txt);
   background-color: var(--srcond-bcg-cl);
   cursor: pointer;
   border: none;
@@ -208,11 +223,13 @@ body {
 .title-project {
   font-size: 18px;
   line-height: 2;
-
   letter-spacing: 0.06em;
+  color: var(--main-cl-txt);
 }
 .type-project {
   line-height: 1.87;
-
   color: var(--second-cl-txt);
+}
+.link-project {
+  text-decoration: none;
 }
